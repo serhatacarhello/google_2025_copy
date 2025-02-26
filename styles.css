@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  padding: 15px 20px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: end;
+}
+
+ul {
+  list-style: none;
+  margin: 10px 5px 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-left li,
+.nav-right li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.nav-right li:last-child {
+  margin-left: 2px;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.nav-right li a,
+.country a {
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-right li a:hover {
+  text-decoration: underline;
+}
+
+.profile {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #eee;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  margin-left: 10px;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 272px;
+  margin-bottom: 25px;
+}
+.search-form {
+  display: inline-block;
+  width: 100%;
+  max-width: 584px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 20px 12px 40px;
+  font-size: 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  outline: none;
+}
+
+.search-box:hover,
+.search-box:focus {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.4);
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url("assets/search-icon.png") no-repeat center;
+  background-size: 20px;
+}
+
+.keyboard-icon {
+  position: absolute;
+  right: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 27px;
+  height: 24px;
+  background: url("https://www.gstatic.com/inputtools/images/tia.png") no-repeat
+    center;
+
+  background-size: 24px;
+}
+
+.mic-icon {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url("https://www.google.com/images/branding/googlemic/2x/googlemic_color_24dp.png")
+    no-repeat center;
+  background-size: 24px;
+}
+
+.camera-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 34px;
+  background: url("assets/camera-icon.png") no-repeat center;
+  background-size: 34px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.button {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #3c4043;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+.button:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+  background-color: #9fcefd;
+}
+
+footer {
+  background-color: #f2f2f2;
+  font-size: 14px;
+  color: #70757a;
+  display: flex;
+  flex-direction: column;
+}
+
+.country {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 0.25px solid rgb(94, 93, 93);
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.footer-left li,
+.footer-right li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer-middle li a,
+.footer-left li a,
+.footer-right li a {
+  color: #70757a;
+  text-decoration: none;
+}
+
+.footer-left li a:hover,
+.footer-right li a:hover {
+  text-decoration: underline;
+}
